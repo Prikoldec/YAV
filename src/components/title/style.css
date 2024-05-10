@@ -1,0 +1,40 @@
+.title {
+    max-width: 1920px;
+    max-height: 230px;
+    margin: 0 auto;
+    padding: 65px 0 0 130px;
+}
+
+.text {
+    color: var(--red-03);
+    font-family: "South";
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 230px;
+} 
+
+
+
+
+
+/* .title {
+    position: absolute;
+    width: 1382px;
+    height: 230px;
+    left: 130px;
+    top: 162px;
+}
+
+.text {
+    color: #A80B00;
+    font-family: South, sans-serif;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 230px;
+} */
+
+
+
+
+
+
