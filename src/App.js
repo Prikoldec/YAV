@@ -1,21 +1,21 @@
 import Events from './components/events/Events';
-import Header from './components/header/Header';
-import Title from './components/title/Title';
 import './styles/main.css';
-import "./fonts/South.woff";
-
+import ClusterPage from "./components/clusterPage/ClusterPage";
+import EventPage from './components/eventPage/EventPage'
+import BuyTicketPage from "./components/buyTicketPage/BuyTicketPage";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
-  return (
-    <div className="App">
-
-      {/* <Navbar /> */}
-      <Header />
-      <Title />
-      <Events />
-      {/* <Main /> */}
-
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<ClusterPage />} />
+                <Route path="/eventsPage" element={<Events />} />
+                <Route path="/ticketPage" element={<BuyTicketPage />} />
+                <Route path="/eventPage" element={<EventPage />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

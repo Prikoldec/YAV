@@ -7,26 +7,23 @@ const globalStyles = styled("createGlobalStyle")`
     font-weight: 400;
     src: url('./../fonts/South.woff') format('woff');
   }
-
   @font-face {
-    font-family: 'Helvetica_regular';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
-    src: url('./../fonts/helvetica_regular.otf') format('otf');
+    src: url('./../fonts/Helvetica.woff') format('woff');
   }
-
   @font-face {
-    font-family: 'Helvetica_oblique';
+    font-family: 'Helvetica-Bold';
     font-style: normal;
     font-weight: 400;
-    src: url('./../fonts/helvetica_oblique.otf') format('otf');
+    src: url('./../fonts/Helvetica-Bold.woff') format('woff');
   }
-
   @font-face {
-    font-family: 'Helvetica_bold';
+    font-family: 'Helvetica-BoldOblique';
     font-style: normal;
     font-weight: 400;
-    src: url('./../fonts/helvetica_bold.otf') format('otf');
+    src: url('./../fonts/Helvetica-BoldOblique.woff') format('woff');
   }
 `;
 

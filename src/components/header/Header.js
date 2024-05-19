@@ -1,23 +1,41 @@
-import './style.css';
+import React from 'react';
+import {
+  Container,
+  HeaderNav,
+  HeaderNavLink, HeaderNavLinkExternal,
+  HeaderNavList,
+  HeaderNavListItem,
+  HeaderRow,
+  HeaderWrapper,
+  Logo
+} from "./headerStyles";
 
 const Header = () => {
-  return ( 
-    <header className="header">
-      <div className="container">
-        <div className="header-row">
-          <div className="logo">YAV</div>
-          <nav className="header_nav">
-            <ul> 
-              <li><a href="#!">Мероприятия</a></li>
-              <li><a href="#!">Магазин</a></li>
-              <li><a href="#!">Кластеры</a></li>
-              <li><a href="#!">Мой аккаунт</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+  return (
+      <HeaderWrapper>
+        <Container>
+          <HeaderRow>
+            <Logo>YAV</Logo>
+            <HeaderNav>
+              <HeaderNavList>
+                <HeaderNavListItem>
+                  <HeaderNavLink to="/eventsPage">Мероприятия</HeaderNavLink>
+                </HeaderNavListItem>
+                <HeaderNavListItem>
+                  <HeaderNavLink to="/">Магазин</HeaderNavLink>
+                </HeaderNavListItem>
+                <HeaderNavListItem>
+                  <HeaderNavLink to="/">Кластеры</HeaderNavLink>
+                </HeaderNavListItem>
+                <HeaderNavListItem>
+                  <HeaderNavLinkExternal href="#!">Мой аккаунт</HeaderNavLinkExternal>
+                </HeaderNavListItem>
+              </HeaderNavList>
+            </HeaderNav>
+          </HeaderRow>
+        </Container>
+      </HeaderWrapper>
   );
 };
-
 export default Header;
+

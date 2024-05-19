@@ -1,80 +1,110 @@
 import event_picture from './../../img/event_picture.png';
-import './style.css';
+import {
+    EventContainer,
+    EventDate, EventDescriptionContainer, EventDescriptionLink, EventListContainer,
+    EventText,
+    EventTicketsContainer,
+    EventTitle, NavLink,
+    TicketsButton,
+    TicketsLeftContainer
+} from './eventsStyles'
+import {Container, Image, NameEvent} from "../eventPage/EventPageStyles";
+import React from "react";
+import Header from "../header/Header";
 
 const Events = () => {
-  return ( 
-    <div className = "event_list">
-      <div className = "event">
-        <img src={event_picture} className="event_picture" alt="event_picture"/>
-        <div className="event_description">
-          <div className="event_title">SUMMER NIGHT</div>
-          <div className="event_date">4 ноября 2024, 19:00 - 5:00</div>
-          <div className="event_text">
-          <p>Йоу! Скучали? Пришло время нового мероприятия.</p>
+    return (
+        <Container>
+            <Header/>
+            <NameEvent>МЕРОПРИЯТИЯ</NameEvent>
+            <EventListContainer>
 
-          <p>Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное и даже с пунктами типо:
-           первый
-           второй
-           третий</p>
-          <p>Итого у вас должно получиться: Классная работа!</p>
-          </div>
-          <a href="#!">Узнать больше</a>
-        </div>
-        <div className="event_tickets">
-          <button>
-            <div className="button_text">Купить билет</div>
-          </button>
-          <div className="tickets_left"><p>56 </p> билетов осталось</div>
-        </div>
-      </div>
-      <div className = "event">
-        <img src={event_picture} className="event_picture" alt="event_picture"/>
-        <div className="event_description">
-          <div className="event_title">SUMMER NIGHT</div>
-          <div className="event_date">4 ноября 2024, 19:00 - 5:00</div>
-          <div className="event_text">
-          <p>Йоу! Скучали? Пришло время нового мероприятия.</p>
+                <EventContainer>
+                    <Image src={event_picture} alt="event_picture" style={{width: '30%'}}/>
+                    <EventDescriptionContainer>
+                        <EventTitle>SUMMER NIGHT</EventTitle>
+                        <EventDate>4 ноября 2024, 19:00 - 5:00</EventDate>
+                        <EventText>
+                            <p>Йоу! Скучали? Пришло время нового мероприятия.</p>
 
-          <p>Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное и даже с пунктами типо:
-           первый
-           второй
-           третий</p>
-          <p>Итого у вас должно получиться: Классная работа!</p>
-          </div>
-          <a href="#!">Узнать больше</a>
-        </div>
-        <div className="event_tickets">
-          <button>
-            <div className="button_text">Купить билет</div>
-          </button>
-          <div className="tickets_left"><p>56 </p> билетов осталось</div>
-        </div>
-      </div>
-      <div className = "event">
-        <img src={event_picture} className="event_picture" alt="event_picture"/>
-        <div className="event_description">
-          <div className="event_title">SUMMER NIGHT</div>
-          <div className="event_date">4 ноября 2024, 19:00 - 5:00</div>
-          <div className="event_text">
-          <p>Йоу! Скучали? Пришло время нового мероприятия.</p>
+                            <p>Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то
+                                описание
+                                сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и
+                                бла
+                                бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое
+                                долгое и объемное и даже с пунктами типо:
+                                первый
+                                второй
+                                третий</p>
+                            <p>Итого у вас должно получиться: Классная работа!</p>
+                        </EventText>
+                        <EventDescriptionLink href="#!">Узнать больше</EventDescriptionLink>
+                    </EventDescriptionContainer>
+                    <EventTicketsContainer>
+                        <TicketsButton>
+                            <NavLink to="/eventPage">Купить билет</NavLink>
+                        </TicketsButton>
+                        <TicketsLeftContainer><p>56 </p> билетов осталось</TicketsLeftContainer>
+                    </EventTicketsContainer>
+                </EventContainer>
+                <EventContainer>
+                    <Image src={event_picture} alt="event_picture" style={{width: '30%'}}/>
+                    <EventDescriptionContainer>
+                        <EventTitle>SUMMER NIGHT</EventTitle>
+                        <EventDate>4 ноября 2024, 19:00 - 5:00</EventDate>
+                        <EventText>
+                            <p>Йоу! Скучали? Пришло время нового мероприятия.</p>
 
-          <p>Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое долгое и объемное и даже с пунктами типо:
-           первый
-           второй
-           третий</p>
-          <p>Итого у вас должно получиться: Классная работа!</p>
-          </div>
-          <a href="#!">Узнать больше</a>
-        </div>
-        <div className="event_tickets">
-          <button>
-            <div className="button_text">Купить билет</div>
-          </button>
-          <div className="tickets_left"><p>56 </p> билетов осталось</div>
-        </div>
-      </div>
-    </div>
-   );
+                            <p>Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то
+                                описание
+                                сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и
+                                бла
+                                бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое
+                                долгое и объемное и даже с пунктами типо:
+                                первый
+                                второй
+                                третий</p>
+                            <p>Итого у вас должно получиться: Классная работа!</p>
+                        </EventText>
+                        <EventDescriptionLink href="#!">Узнать больше</EventDescriptionLink>
+                    </EventDescriptionContainer>
+                    <EventTicketsContainer>
+                        <TicketsButton>
+                            <NavLink to="/eventPage">Купить билет</NavLink>
+                        </TicketsButton>
+                        <TicketsLeftContainer><p>56 </p> билетов осталось</TicketsLeftContainer>
+                    </EventTicketsContainer>
+                </EventContainer>
+                <EventContainer>
+                    <Image src={event_picture} alt="event_picture" style={{width: '30%'}}/>
+                    <EventDescriptionContainer>
+                        <EventTitle>SUMMER NIGHT</EventTitle>
+                        <EventDate> 4 ноября 2024, 19:00 - 5:00</EventDate>
+                        <EventText>
+                            <p>Йоу! Скучали? Пришло время нового мероприятия.</p>
+
+                            <p>Какое-то описание сути, задания и бла бла и оно такое долгое и объемное. Какое-то
+                                описание
+                                сути, задания и бла бла и оно такое долгое и объемное. Какое-то описание сути, задания и
+                                бла
+                                бла и оно такое долгое и объемное. Какое-то описание сути, задания и бла бла и оно такое
+                                долгое и объемное и даже с пунктами типо:
+                                первый
+                                второй
+                                третий</p>
+                            <p>Итого у вас должно получиться: Классная работа!</p>
+                        </EventText>
+                        <EventDescriptionLink href="#!">Узнать больше</EventDescriptionLink>
+                    </EventDescriptionContainer>
+                    <EventTicketsContainer>
+                        <TicketsButton>
+                            <NavLink to="/eventPage">Купить билет</NavLink>
+                        </TicketsButton>
+                        <TicketsLeftContainer><p>56 </p> билетов осталось</TicketsLeftContainer>
+                    </EventTicketsContainer>
+                </EventContainer>
+            </EventListContainer>
+        </Container>
+    );
 }
- 
 export default Events;
