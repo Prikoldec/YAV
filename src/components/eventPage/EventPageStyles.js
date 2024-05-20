@@ -93,9 +93,9 @@ export const DateAndPlace = styled('div')`
   flex-direction: column;
   margin-top: 5%;
   gap: 2%;
-  margin-left: 15%;
+  margin-left: 10%;
   justify-content: center;
-  width: 100%;
+  width: 85%;
 `;
 
 
@@ -113,7 +113,6 @@ export { globalStyles };
 export const DateAndNameContainer = styled('div')`
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 10px;
   margin-left: 20%;
   margin-top: 1%;
